@@ -1,6 +1,6 @@
-package org.sotobotero.customer.repository;
+package mx.coatltech.customer.repository;
 
-import org.sotobotero.customer.entities.Customer;
+import mx.coatltech.customer.entities.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
