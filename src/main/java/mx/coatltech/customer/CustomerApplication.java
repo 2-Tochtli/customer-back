@@ -1,4 +1,4 @@
-package org.sotobotero.customer;
+package mx.coatltech.customer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

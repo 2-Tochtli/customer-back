@@ -1,4 +1,4 @@
-package org.sotobotero.customer.entities;
+package mx.coatltech.customer.entities;
 
 
 import jakarta.persistence.Entity;

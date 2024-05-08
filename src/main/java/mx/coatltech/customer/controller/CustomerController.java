@@ -1,7 +1,7 @@
-package org.sotobotero.customer.controller;
+package mx.coatltech.customer.controller;
 
-import org.sotobotero.customer.entities.Customer;
-import org.sotobotero.customer.repository.CustomerRepository;
+import mx.coatltech.customer.repository.CustomerRepository;
+import mx.coatltech.customer.entities.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -71,7 +71,7 @@ public class CustomerController {
         Customer newcustomer = prsRepository.save(customer);
         return new ResponseEntity<>(newcustomer, HttpStatus.CREATED);
     }
-//generate update method for org.sotobotero.customer.entities.Customer entity
+//generate update method for mx.sotobotero.customer.entities.Customer entity
     @Operation(summary = "Update a customer")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Update the customer"),
@@ -80,8 +80,8 @@ public class CustomerController {
   /*
 take care with swagger code generator if you does not indicate here @RequestBody anotation, 
 the generate code no take body payload and yo could get this exception "Required request body is missing: 
-public org.springframework.http.ResponseEntity<org.sotobotero.customer.entities.Customer> 
-org.sotobotero.customer.controller.CustomerController.createcustomer(org.sotobotero.customer.entities.Customer)"
+public org.springframework.http.ResponseEntity<mx.coatltech.customer.entities.Customer>
+mx.coatltech.customer.controller.CustomerController.createcustomer(mx.coatltech.customer.entities.Customer)"
 */
     @PutMapping(consumes = MediaType.APPLICATION_JSON_VALUE,produces =  MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Customer> updatecustomer(@RequestBody Customer customer) {
@@ -117,7 +117,7 @@ org.sotobotero.customer.controller.CustomerController.createcustomer(org.sotobot
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
-//generate update method for name attribute of org.sotobotero.customer.entities.Customer entity
+//generate update method for name attribute of mx.coatltech.customer.entities.Customer entity
     @Operation(summary = "Update a customer name")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Update the customer name"),

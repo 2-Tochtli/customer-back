@@ -1,4 +1,4 @@
-package org.sotobotero.cutomer;
+package mx.coatltech.cutomer;
 
 import static org.mockito.Mockito.when;
 import java.util.ArrayList;
@@ -9,9 +9,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.sotobotero.customer.controller.CustomerController;
-import org.sotobotero.customer.entities.Customer;
-import org.sotobotero.customer.repository.CustomerRepository;
+import mx.coatltech.customer.controller.CustomerController;
+import mx.coatltech.customer.entities.Customer;
+import mx.coatltech.customer.repository.CustomerRepository;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
@@ -90,7 +90,7 @@ public class CustomerControllerTests extends AbstractIntegrationTest{
 
     @Test
     public void getCustomerByIdTest() throws Exception {
-        Long customerId = 1L;
+        Long customerId = (Long) 1L;
         String customerIdString = customerId.toString();
         Customer customer = new Customer(customerId, "John Doe", "johndoe@example.com", "123456789",
                 "123 Main Street", "Anytown", "Anystate", "US", "12345",
