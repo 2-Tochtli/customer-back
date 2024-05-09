@@ -2,6 +2,9 @@
 
 **Content**
 
+1. [Como empezar a usar la aplicación](#como-empezar)
+2. [Como contribuir con este proyecto](#como-contribuir-con-este-proyecto)
+3. [Comandos git](#algunos-comandos-utiles-de-git)
 1.[Como empezar a usar la aplicación](#como-empezar)
 2.[Como contribuir con este proyecto](#como-contribuir-con-este-proyecto)
 3.[Comandos git](#algunos-comandos-utiles-de-git)
